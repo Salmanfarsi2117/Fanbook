@@ -18,15 +18,7 @@ dev_dependencies:
     sdk: flutter
 
 flutter:
-  uses-material-design: trueimport 'package:flutter/material.dart';
-
-void main() {
-  runApp(FanbookApp());
-}
-
-class FanbookApp extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
+  uses-material-design: true
 import 'package:flutter/material.dart';
 
 void main() {
@@ -47,7 +39,8 @@ class FanbookApp extends StatelessWidget {
       ),
     );
   }
-}<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+}
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.fanbook">
     <application
         android:label="Fanbook"
