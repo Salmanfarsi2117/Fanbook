@@ -1,1 +1,16 @@
-Default workflow
+workflows:
+  android-release:
+    name: Android Release Build
+    instance_type: linux
+    max_build_duration: 60
+    environment:
+      flutter: stable
+    scripts:
+      - name: Get dependencies
+        script: |
+          flutter pub get
+      - name: Build APK
+        script: |
+          flutter build apk --release
+    artifacts:
+      - build/app/outputs/flutter-apk/app-release.apk
