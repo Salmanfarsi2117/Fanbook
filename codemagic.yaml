@@ -1,6 +1,6 @@
 workflows:
-  fanbook-workflow:
-    name: Fanbook Build
+  android-release:
+    name: Android Release Build
     instance_type: mac_mini
     max_build_duration: 60
     environment:
@@ -11,27 +11,6 @@ workflows:
           flutter pub get
       - name: Build APK
         script: |
-          flutter build apk
+          flutter build apk --release
     artifacts:
       - build/app/outputs/flutter-apk/app-release.apk
-name: fanbook
-description: A simple fan social app.
-publish_to: 'none'
-version: 1.0.0+1
-
-environment:
-  sdk: ">=2.18.0 <3.0.0"
-
-dependencies:
-  flutter:
-    sdk: flutter
-  firebase_core: ^2.24.0
-  firebase_auth: ^4.16.0
-  cloud_firestore: ^4.13.0
-
-dev_dependencies:
-  flutter_test:
-    sdk: flutter
-
-flutter:
-  uses-material-design: true
