@@ -1,3 +1,9 @@
+workflows:
+  android-release:
+    name: Fanbook Android Build
+    max_build_duration: 20
+    environment:
+      flutter: stable
 name: fanbook
 description: A simple fan social app.
 publish_to: 'none'
