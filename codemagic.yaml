@@ -3,8 +3,7 @@ workflows:
     name: Fanbook Android Build
     max_build_duration: 20
     environment:
-      flutter: stable
-      - name: Get dependencies
+      flutter: stable 
         script: flutter pub get
       - name: Build APK
         script: flutter build apk --release
