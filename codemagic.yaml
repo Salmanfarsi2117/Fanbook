@@ -1,4 +1,4 @@
- name: fanbook
+name: fanbook
 description: A simple fan social app.
 publish_to: 'none'
 version: 1.0.0+1
