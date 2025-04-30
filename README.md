@@ -1,1 +1,1 @@
-# Fanbook
+codemagic.yaml
